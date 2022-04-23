@@ -50,6 +50,7 @@ The best performing pre-trained model was the RoBERTa-base model with an AMI sco
 For the RoBERTa-base model, the learning rate, number of epochs, and training batch size were tuned using [W&B](https://wandb.ai/site/sweeps) library. An initial Bayes method sweep showed a learning rate trend where the optimal learning rate range is gleaned. Subsequent random method sweeps showed that the best validation AMI scores resulted when epochs were between 3 and 8 and batch size was between 25 and 50.
 
 ![Learning rate plot](README%20Figures/learning_rate_trend.png)
+
 **Figure 1.** Bayesian method hyperparameter tuning results
 
 #### What did the best model get wrong?
