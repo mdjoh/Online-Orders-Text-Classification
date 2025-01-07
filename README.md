@@ -25,7 +25,7 @@ Vectorizer hyperparameters tuned:
 - ngram_range
 - max_features
 
-**Best competition AMI score using shallow ML:** 0.8389
+**Best competition AMI score** (using shallow ML): **0.8389**
 
 ## Hybrid
 Since the LGBM algorithm yielded the best AMI scores among shallow ML classifiers, it was used for the hybrid approach.
@@ -37,9 +37,9 @@ Hybrid approaches had better AMI scores from shallow ML algorithms when text pre
 
 Text metadata (i.e. number of words, nouns, and verbs in each document) were concatenated to the sentence embeddings but did not increase the AMI score.
 
-**Best competition AMI score using hybrid approach with text metadata:** 0.9065
+**Best competition AMI score** (using hybrid approach with text metadata): **0.9065**
 
-**Best competition AMI score using hybrid approach without text metadata:** 0.9077
+**Best competition AMI score** (using hybrid approach without text metadata): **0.9077**
 
 ## Deep
 The deep approach focus was on transformers as they are considered to be the current state-of-the-art technique for NLP.
@@ -54,9 +54,9 @@ For the RoBERTa-base model, the learning rate, number of epochs, and training ba
 **Figure 1.** Bayesian method hyperparameter tuning results
 
 #### What did the best model get wrong?
-The best model often misclassified documents where two labels could apply. For example, \"*I would like to order 3 triple cheeseburgers and a diet coke*" can be labeled as *orderburgerintent* or *orderdrinkintent*.
+The best model often misclassified documents where two labels could apply. For example, `I would like to order 3 triple cheeseburgers and a diet coke` can be labeled as `orderburgerintent` or `orderdrinkintent`.
 
 ![Incorrect predictions bar chart](README%20Figures/incorrect_predictions.png)
 **Figure 2.** Incorrect validation set predictions
 
-**Best competition AMI score using RoBERTa-base (learning rate: 4e-5, number of training epochs: 7, training batch size: 39):** 0.9381
+**Best competition AMI score** (using RoBERTa-base with learning rate: 4e-5, number of training epochs: 7, training batch size: 39): **0.9381**
