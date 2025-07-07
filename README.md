@@ -42,6 +42,13 @@ Text metadata (i.e. number of words, nouns, and verbs in each document) were con
 **Best competition AMI score** (using hybrid approach without text metadata): **0.9077**
 
 ## Deep
+Large language models (LLM) explored:
+- BERT
+- DistilBERT
+- RoBERTa-base
+- RoBERTa-large
+- XLM-RoBERTa
+
 The deep approach focus was on transformers as they are considered to be the current state-of-the-art technique for NLP.
 Preprocessing techniques did not help with deep approaches. Pre-trained language models worked best with unprocessed text.
 
