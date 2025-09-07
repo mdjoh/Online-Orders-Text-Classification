@@ -60,10 +60,16 @@ For the RoBERTa-base model, the learning rate, number of epochs, and training ba
 
 **Figure 1.** Bayesian method hyperparameter tuning results
 
+#### What did the best model get right?
+Considering the diagonal of the confusion matrix, the best model did a good job in classifying the validation set text data.
+
+![Best model performance confusion matrix](README%20Figures/cfmatrix_best.png)
+**Figure 2.** Confusion matrix detailing the classification performance of the best model on the validation set
+
 #### What did the best model get wrong?
 The best model often misclassified documents where two labels could apply. For example, `I would like to order 3 triple cheeseburgers and a diet coke` can be labeled as `orderburgerintent` or `orderdrinkintent`.
 
 ![Incorrect predictions bar chart](README%20Figures/incorrect_predictions.png)
-**Figure 2.** Incorrect validation set predictions
+**Figure 3.** Incorrect validation set classifications
 
 **Best competition AMI score** (using RoBERTa-base with learning rate: 4e-5, number of training epochs: 7, training batch size: 39): **0.9381**
